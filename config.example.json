@@ -1,0 +1,18 @@
+{
+    "pusher": {
+        "init": {
+            "appId": "",
+            "key": "",
+            "secret": "",
+            "cluster": "",
+            "encrypted": true
+        },
+        "channel_details": {
+            "channel": "",
+            "event": ""
+        }
+    },
+    "webhook": {
+        "userAgent": ""
+    }
+}

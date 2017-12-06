@@ -7,7 +7,7 @@ routes.get('/', function (request, response) {
     var html;
     var commits;
     // Check to see if resume is on Server //
-    fs.readFile('./resume/resume.html', (error, data) => {
+    fs.readFile('./resume/resume.html', function (error, data) {
         if (!error) {
             html = data.toString();
         } else {

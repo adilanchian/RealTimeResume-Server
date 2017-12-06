@@ -25,7 +25,7 @@ module.exports = function(req, res) {
 
     writeCommitsToFile(commits);
 
-    request(options, (error, response, data) => {
+    request(options, function(error, response, data) {
 
         if (!error && response.statusCode == 200) {
             var content = JSON.parse(data);
@@ -56,7 +56,7 @@ var createHTML = function(url, commits) {
             var value = result.value;
 
             // Write data to file //
-            fs.writeFile('./resume/resume.html', value, (error) => {
+            fs.writeFile('./resume/resume.html', value, function(error) {
                 if (error) {
                     console.log('Error writing resume html to file: '+error);
                 } else {
@@ -72,7 +72,7 @@ var createHTML = function(url, commits) {
 
 var writeCommitsToFile = function(commits) {
     // Write data to file //
-    fs.writeFile('./resume/commits.txt', commits, (error) => {
+    fs.writeFile('./resume/commits.txt', commits, function(error) {
         if (error) {
             console.log('Error writing commits to file: '+error);
         } else {

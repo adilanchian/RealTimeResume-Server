@@ -3,11 +3,11 @@ const git = require('./git');
 const fs = require('fs');
 
 routes.use('/git', git);
-routes.get('/', function (request, response) {
+routes.get('/', function(request, response) {
     var html;
     var commits;
     // Check to see if resume is on Server //
-    fs.readFile('./resume/resume.html', function (error, data) {
+    fs.readFile('./resume/resume.html', function(error, data) {
         if (!error) {
             html = data.toString();
         } else {
@@ -19,7 +19,7 @@ routes.get('/', function (request, response) {
             }
         }
 
-        fs.readFile('./resume/commits.txt', function (error, data) {
+        fs.readFile('./resume/commits.txt', function(error, data) {
             if (!error) {
                 commits = data.toString();
             } else {

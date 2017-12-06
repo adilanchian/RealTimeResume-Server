@@ -1,5 +1,31 @@
 {
-    "scripts": {
-        "start": "node server.js" 
-    }
+  "name": "realtimeresume-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "json-to-html": "^0.1.2",
+    "mammoth": "^1.4.2",
+    "pdftohtmljs": "^0.4.2",
+    "pusher": "^1.5.1",
+    "request": "^2.83.0",
+    "shelljs": "^0.7.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adilanchian/RealTimeResume-Server.git"
+  },
+  "author": "Alec Dilanchian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adilanchian/RealTimeResume-Server/issues"
+  },
+  "homepage": "https://github.com/adilanchian/RealTimeResume-Server#readme"
 }

@@ -6,7 +6,7 @@ const pusher = require('../../pusher.js');
 const config = require('../../config.json');
 const path = 'resume.docx';
 
-module.exports = (req, res) => {
+module.exports = function(req, res) {
     // Retrieve URL of document to download and do some fanciness //
     var resumePartial = JSON.stringify(req.body.repository.contents_url);
     var resumeUrl = resumePartial.replace('{+path}', path);

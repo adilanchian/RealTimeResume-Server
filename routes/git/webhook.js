@@ -39,6 +39,13 @@ module.exports = function(req, res) {
                 status: 200,
                 message: 'Created resume on server.'
             });
+        } else {
+            console.log('Error in making request for resume: '+error);
+
+            res.status(500).json({
+                status: 500,
+                message: error
+            });
         }
     });
 }

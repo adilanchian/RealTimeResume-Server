@@ -2,7 +2,7 @@
 
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
-  * [Setting Up `config.json`](#setting-up--configjson-)
+  * [Config.json](#configjson)
   * [Ngrok](#ngrok)
   * [Running RealTimeResume-Server](#running-realtimeresume-server)
 - [Azure Cloud](#azure-cloud)
@@ -18,7 +18,7 @@ I will go through the technical stack and how to get started with RealTimeResume
 ## Getting Started
 Setting up the server portion of this component is fairly straight forward. If you have not yet, please make sure you go through the Angular setup. It has certain keys that are needed on the server side.
 
-### Setting Up `config.json`
+### Config.json
 This config file is what handles all your Pusher details. The first step of getting started is to go ahead and fill in these section with the proper values. Once that is complete, please make sure to rename `config.example.json` to `config.json`.
 
 ### Ngrok

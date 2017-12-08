@@ -1,5 +1,14 @@
 # RealTimeResume-Server
 
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+  * [Setting Up `config.json`](#setting-up--configjson-)
+  * [Ngrok](#ngrok)
+  * [Running RealTimeResume-Server](#running-realtimeresume-server)
+- [Azure Cloud](#azure-cloud)
+- [Huge Thanks](#huge-thanks)
+- [Questions](#questions)
+
 ## Introduction
 Welcome to RealTimeResume! This is the server portion for the Angular component located @ https://github.com/adilanchian/RealTimeResume-Angular.
 This is an attempt at creating a component that allows you to keep your resume up to date on any angular site by utilizing Github's webhook.
@@ -35,8 +44,8 @@ I wanted to recognize a few libraries that really made this project come to life
 - Pusher (Realtime notification service) - https://pusher.com
 - Mammoth.js (.docx to HTML converter) - https://github.com/mwilliamson/mammoth.js
 
-## Questions/Concerns
+## Questions
 Thanks for checking out this project!
 If you have any questions or concerns in regards to the server component please file a Github Issue in this repository.
-If you have any questions or cocerns about the Angular portion of this component, please
+If you have any questions or concerns about the Angular portion of this component, please
 file a Github Issue in https://github.com/adilanchian/RealTimeResume-Angular
